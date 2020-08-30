@@ -28,3 +28,28 @@ function beCheerful() {
 for( var num = 1; num < 99; num = num + 1) {
     beCheerful();
 }
+
+//Multiples of 3 but not all
+for(var i=-300; i<=0; i++) {
+    
+    // check if i is evenly divisible by 3
+    if(i%3==0) {
+        // skip -3 and -6
+        if(i === -3 || i === -6) {
+            continue;
+        }
+        else {
+          console.log(i);
+        }
+    }
+}
+
+//Printing Integars with while
+var num = 2000;
+while(num <= 5280) {
+    console.log(num);
+    num += 1;
+}
+
+
+    
