@@ -36,10 +36,10 @@ for(var i=-300; i<=0; i++) {
     if(i%3==0) {
         // skip -3 and -6
         if(i === -3 || i === -6) {
-            continue;
+            continue; //the continue tells it to skip these numbers
         }
         else {
-          console.log(i);
+          console.log(i); //now it can print the others in the loop
         }
     }
 }
@@ -51,5 +51,30 @@ while(num <= 5280) {
     num += 1;
 }
 
+//You say it's your birthday
+var month = 3;
+var day = 23;
+function birthdayCheck(A, B) {
+  if((day === A && month === B) || (month === A && day === B)){
+    console.log("How did you know?");
+  }
+  else {
+    console.log("Just another day...");
+ }
 
+birthdayCheck(3,23); //Calls the function for testing
+
+ //LeapYear
+ 
+ function leapYear(year){
+  if ((year%4 === 0) && (year%100 !== 0) || (year%400 ===0)){
+    console.log("It's a leap year");
+  }
+  else {
+    console.log("Not a leap year");
+  }
+}
+
+leapYear(2020);
+        
     
